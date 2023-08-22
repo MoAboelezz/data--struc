@@ -1,0 +1,10 @@
+PROCEDURE dot_product(v1,v2: ARRAY_OF INTEGERs[]; VAR ps:FLOAT)
+VAR
+    i,j:INTEGER
+BEGIN
+    FOR i FROM 0 TO v1.length-1 STEP 1  DO
+        FOR j FROM 0 TO v2.length-1 STEP step  DO
+            ps=ps+v1[i]*v2[j]
+        END_FOR
+    END_FOR
+END

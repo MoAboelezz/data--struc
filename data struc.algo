@@ -1,0 +1,19 @@
+ALGORITHM comapare two arrays
+VAR
+    set1 : ARRAY_OF INTEGERs[4];
+    set2 : ARRAY_OF INTEGERs[5];
+    set3 : ARRAY_OF INTEGERs[];
+    i , j , k  : INTEGER
+    sum : INTEGER=0
+BEGIN
+    IF (set1[i]<>set2[j]) THEN
+        set3.push(set1[i])
+    END_IF
+    IF (set2[j]<>set1[i]) THEN
+        set3.push(set2[j])
+    END_IF
+
+    FOR k FROM 0 TO set3.length-1 STEP 1  DO
+        sum=sum + set3[k]
+    END_FOR
+END
